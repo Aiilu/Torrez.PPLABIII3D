@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Traigo el css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Traigo el script -->
+    <script src="./js/scripts.js" type="module"></script>
+    <!-- Para que no tire el error de favicon -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- Para poner el ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <title>Primer Parcial</title>
+</head>
+<body>
+    <header>
+        <img class="imagLogo" src="./assets/logo.png" alt="foto logo">
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <h1>Administracion</h1>
+            <img class="imagTitulo" src="./assets/titulo.jpg" alt="foto titulo">
+        <div class="alinear">
+        <br>
+        <form>
+            <fieldset>
+                <legend>Información del Anuncio</legend>
+                <label for="txtTitulo">Titulo:</label>
+                <br>
+                <input type="text" name="tituloF" id="txtTitulo" placeholder="Titulo">
+
+                <input type="hidden" name="transH" id="idTrans" value="Venta">
+               <br>
+
+               <br>
+               <label for="txtDescripcion">Descripcion:</label>
+               <br>
+               <input type="text" name="descripcionF" id="txtDescripcion" placeholder="Descripcion">
+               <br>
+
+               <br>
+                <label for="optAnimal">Animal:</label>
+                <br>
+                <input type="radio" name="tipoF" id="optAnimal" value="Perro">Perro
+                <br>
+                <input type="radio" name="tipoF" id="optAnimal" value="Gato">Gato
+               <br>
+
+               <br>
+               <label for="numPrecio">Precio:</label>
+               <br>
+               <input type="number" name="precioF" id="numPrecio" placeholder="Precio" min="1">
+               <br>
+
+               <br>
+               <div class="alinearIconos">
+               <div class="alinearIconosInd">
+                   <img src="./assets/raza.png" alt="foto puerta" style="width: 30px; height: 22px;">
+                <input type="text" name="razaF" id="txtRaza" placeholder="Raza">
+               </div>
+               <br>
+               
+               <br>
+               <div class="alinearIconosInd">
+                <img src="./assets/fechaV.png" alt="foto puerta" style="width: 30px; height: 22px;">
+                <input type="date" name="fechaF" id="fechaVacuna" placeholder="dd/mm/aaaa">
+               </div>
+               <br>
+
+               <br>
+               <div class="alinearIconosInd">
+                <img src="./assets/vacunaF.png" alt="foto puerta" style="width: 30px; height: 22px;">
+                <label for="listVacuna"></label>
+                <select name="vacunaA" id="vacunaF">
+                <option selected="true" disabled="disabled">---Elegir---</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+                </select>
+               </div>
+               </div>
+               <br>
+            </fieldset>
+            <br>
+            <button type="submit" name="submitF" id="submitAlta">
+                <i class="fa fa-floppy-o" aria-hidden="true" style="color: black;"></i>
+                Guardar
+            </button>
+            <br>
+            <br>
+            <input class="oculto" type="button" name="btnMF" id="btnGuardar" value="Modificar">
+            <input class="oculto" type="button" name="btnEF" id="btnEliminar" value="Eliminar">
+            <input class="oculto" type="button" name="btnCF" id="btnCancelar" value="Cancelar">
+        </form>
+        </div>
+        <br>
+        <div class="alinear" id="spinnerF"></div>
+        <div class="alinear" class="oculto"id="tablaF"></div>
+        <br>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Todos los derechos reservados 2019 &copy;</p>
+    </footer>
+</body>
+</html>
